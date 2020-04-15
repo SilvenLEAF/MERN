@@ -21,20 +21,21 @@
      flex: 0 0 100px;
 /* flex=flex-grow+flex-shrink+flex-basis */
 /* flex-basis===min-width (nearly but even better) */
-
-     order: 1;
-/* By default it is 0 */
 }
 
 .box1{
      background-color: red;
+     order: 2;
+/* By default it is 0 */
 }
 
 .box2{
      background-color: green;
-     order:
+     order: 3;
 }
 
 .box3{
      background-color: blue;
+     order: 1;
+/* By default it is 0 */
 }
