@@ -1,0 +1,25 @@
+{
+  "short_name": "SilvenLEAF App",
+  "name": "FREE Youtube MP3/MP4 Downloader",
+  "icons": [
+    {
+      "src": "SilvenLEAF.jpg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/jpg"
+    },
+    {
+      "src": "SilvenLEAF.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "SilvenLEAF.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

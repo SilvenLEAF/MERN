@@ -1,2 +1,2 @@
 #   MERN
-A collection ofdfdf my MERN Stack projects!!!
+A collection of my MERN Stack projects!!!
