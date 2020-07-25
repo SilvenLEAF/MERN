@@ -120,7 +120,16 @@ router.post("/login", async (req, res)=>{
 .          delete route
 -------------------------------- */
 router.delete('/delete', auth, async (req, res)=>{
-  console.log(req.user)
+  
+  try {
+    
+    const deletedUser = await User.findByIdAndDelete(req.user);
+    res.json(deletedUser);
+
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+
 })
 
 
