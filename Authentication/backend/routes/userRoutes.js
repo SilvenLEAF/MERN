@@ -1,8 +1,14 @@
 const router = require('express').Router();
 const User = require('./../models/User');
 const bcrypt = require('bcryptjs');
-
 const jwt = require('jsonwebtoken');
+const auth = require('../middleware/auth');
+
+
+
+
+
+
 
 /* --------------------------------
 .          register route
@@ -59,6 +65,7 @@ router.post('/register', async (req, res)=>{
 
 
 
+
 /* --------------------------------
 .           log in route
 -------------------------------- */
@@ -104,6 +111,17 @@ router.post("/login", async (req, res)=>{
 })
 
 
+
+
+
+
+// lesson 5
+/* --------------------------------
+.          delete route
+-------------------------------- */
+router.delete('/delete', auth, async (req, res)=>{
+  console.log(req.user)
+})
 
 
 
