@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import M from 'materialize-css'
 
-export class LoginForm extends Component {
-  
+class LoginForm extends Component {
+  componentDidMount(){
+    M.AutoInit()
+  }
   render() {
     return (
       <div className="container">
