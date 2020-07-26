@@ -1,10 +1,19 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useContext } from 'react'
+import UserContext from '../../context/UserContext'
+
 
 function SignedInLinks() {
+  const {  setUserData } = useContext(UserContext);
+  const handleLogout = ()=>{
+    setUserData({
+      token: undefined,
+      user:undefined
+    })
+    localStorage.setItem("auth-token", "")
+  }  
   return (
     <>
-      <li><NavLink to="/">Logout</NavLink></li> 
+      <li onClick={handleLogout}>Logout</li> 
     </>
   )
 }
