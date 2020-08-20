@@ -11,7 +11,7 @@ app.use(cors());
 
 
 /* -----------------------------------
-.             middlewares
+.             routes
 ----------------------------------- */
 app.use('/users', require('./routes/userRoutes'))
 
