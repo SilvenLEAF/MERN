@@ -5,7 +5,6 @@ const ytdl = require('ytdl-core');
 router.get('/mp3', (req, res, next)=>{
   try {
     
-    console.log(req.query);
 
     const youtubeUrl = req.query.youtubeUrl;
     const videoTitle = req.query.title || 'SilvenLEAF';
@@ -23,8 +22,7 @@ router.get('/mp3', (req, res, next)=>{
 
 router.get('/mp4', (req, res, next)=>{
   try {
-    
-    console.log(req.query);
+   
 
     const youtubeUrl = req.query.youtubeUrl;
     const videoTitle = req.query.title || 'SilvenLEAF';
