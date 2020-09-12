@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'build')));
 
 /* --------------------------------
-.           middlewares
+.           routes
 -------------------------------- */
 // ------------body-parser
 app.use(bodyParser.json());
