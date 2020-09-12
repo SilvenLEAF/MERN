@@ -3,14 +3,12 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
 
 /* --------------------------------
 .           routes
 -------------------------------- */
-// ------------body-parser
-app.use(bodyParser.json());
-
 // ------------routes handling
 app.get('/', (req, res, next)=> {
   try {
