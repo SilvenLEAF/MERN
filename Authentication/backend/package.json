@@ -1,10 +1,10 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Learning MERN Stack Authentication",
+  "description": "Learning MERN Stack Authentication with JWT and localStorage",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
   "keywords": [
     "MERN",

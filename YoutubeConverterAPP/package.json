@@ -7,11 +7,13 @@
   },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
   "keywords": [
     "Youtube",
-    "Converter"
+    "Converter",
+    "MP3", 
+    "MP4"
   ],
   "author": "SilvenLEAF",
   "license": "MIT",
