@@ -31,6 +31,12 @@ app.use(cors());
 app.use('/users', require('./routes/userRoutes'))
 
 
+//errors handler
+app.use((err, req, res)=>{
+    console.log(err)
+    res.json({ msg: "Server Error",  error: err.message })
+})
+
 
 // -----------------connect to MongoDB
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
